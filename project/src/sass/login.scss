@@ -1,0 +1,134 @@
+@charset "utf-8";
+@import "footer";
+.logo {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    .container {
+        height: 50px;
+        img {
+            width: 190px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.main {
+    background: rgb(229, 49, 0);
+    position: relative;
+    .img {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .loginbycode {
+        width: 350px;
+        height: 370px;
+        background: #fff;
+        position: absolute;
+        right: 120px;
+        top: 80px;
+        .code {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: #df9c1f;
+            font-size: 12px;
+            font-weight: 400;
+            cursor: pointer;
+            .title {
+                margin-right: 20px;
+                padding: 10px;
+            }
+            strong {
+                font-size: 30px;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        h3 {
+            position: absolute;
+            font-size: 16px;
+            top: 30px;
+            left: 30px;
+        }
+        img {
+            position: absolute;
+            top: 70px;
+            left: 105px;
+        }
+        .content {
+            position: absolute;
+            top: 210px;
+            left: 130px;
+            color: #ccc;
+            strong {
+                position: absolute;
+                top: -4px;
+                left: -38px;
+                font-size: 30px;
+            }
+            i {
+                color: red;
+                margin: 0 5px;
+            }
+        }
+        .submit {
+            position: absolute;
+            right: 50px;
+            bottom: 40px;
+            a {
+                margin: 0 10px;
+            }
+        }
+        form {
+            position: absolute;
+            top: 70px;
+            left: 50px;
+            p {
+                border: 1px solid #ccc;
+                height: 40px;
+                line-height: 40px;
+                width: 250px;
+                margin-bottom: 50px;
+                position: relative;
+                .iconfont {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    font-size: 26px;
+                    border-right: 1px solid #ccc;
+                    background: #666;
+                    color: #000;
+                }
+                input {
+                    border: 0;
+                    height: 40px;
+                    width: 209px;
+                    position: absolute;
+                    left: 41px;
+                    top: 0;
+                }
+                .submit {
+                    width: 250px;
+                    left: 0;
+                    background: red;
+                    text-align: center;
+                    font-size: 20px;
+                    color: #fff;
+                }
+                .message {
+                    display: block;
+                    width: 248px;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 1px solid #ccc;
+                }
+            }
+        }
+    }
+}

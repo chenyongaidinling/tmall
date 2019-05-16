@@ -1,0 +1,44 @@
+.hidden_search {
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 10;
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 180px;
+        z-index: 11112;
+        strong {
+            font-size: 60px;
+            color: red;
+            line-height: 50px;
+        }
+    }
+    fieldset {
+        border: 0;
+        width: 625px;
+        position: absolute;
+        top: 5px;
+        left: 410px;
+        z-index: 11112;
+        background: rgba($color: #c92f2f, $alpha: .6);
+        input {
+            border: 0;
+            height: 35px;
+            font-size: 14px;
+            width: 500px;
+            border: 2px solid red;
+        }
+        button {
+            border: 0;
+            height: 39px;
+            width: 120px;
+            border-bottom: 1px solid red;
+            background: rgb(238, 40, 40);
+            color: white;
+        }
+    }
+}

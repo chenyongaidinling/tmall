@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 淘宝网 - 淘！我喜欢</title>
+    <meta name="description" content="淘宝网(Taobao.com)作为专业的购物网站拥有全球时尚前沿的消费者购物集市,100%认证网上商城及超值二手商品区，同时购物安全，产品丰富，应有尽有,任你选购,让你尽享网上在线购物乐趣！" />
+    <meta name="keywords" content="淘宝,掏宝,网上购物,C2C,在线交易,交易市场,网上交易,交易市场,网上买,网上卖，购物网站,团购,网上贸易,安全购物,电子商务,放心买,供应,买卖信息,网店,一口价,拍卖,网上开店,网络购物,打折,免费开店,网购,频道,店铺" />
+    <link rel="shortcut icon" href="//img.alicdn.com/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="script/js/jquery.js"></script>
+    <script src="script/js/require.js" defer async="true" data-main="script/js/main_detail.js"></script>
+</head>
+
+<body>
+    <!-- 头部导航 -->
+    <div id="header_nav"></div>
+    <!-- 头部搜索框 -->
+    <div id="header_search"></div>
+    <!-- 商品列表 -->
+    <div id="goods">
+
+
+        <div id="goods_title">
+            <table>
+                <tr>
+                    <td><input type="checkbox" class="all">全选</td>
+                    <td>商品信息</td>
+                    <td>单价</td>
+                    <td>数量</td>
+                    <td>金额</td>
+                    <td>操作</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="goods_list">
+            <table>
+                <!-- <tr>
+                <td style="width:10%"><input type="checkbox"></td>
+                <td style="width:30%;position:relative;" class="clear">
+                    <div class="goodimg">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="goodcontent">
+
+                    </div>
+                </td>
+                <td style="width:15%" class="price"></td>
+                <td style="width:15%"></td>
+                <td style="width:15%" class="addprice">金额</td>
+                <td style="width:15%">
+                    <a href="javascript:;" class="del">删除</a>
+                </td>
+
+            </tr> -->
+            </table>
+        </div>
+    </div>
+
+    <script>
+        $('#header_nav').load('header.html');
+        $('#header_search').load('search.html');
+    </script>
+</body>
+
+</html>

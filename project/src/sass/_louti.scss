@@ -1,0 +1,225 @@
+@charset "utf-8";
+//左边楼梯
+#left {
+    position: fixed;
+    left: 1px;
+    top: 200px;
+    width: 36px;
+    height: auto;
+    font-size: 12px;
+    background: #666;
+    z-index: 10000;
+    display: none;
+    li {
+        a {
+            display: inline-block;
+            line-height: 12px;
+            width: 24px;
+            height: 26px;
+            margin: 4px;
+            color: #fff;
+            text-align: center;
+            strong {
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+    }
+    li:nth-child(1) a {
+        line-height: 26px;
+    }
+}
+
+//第一个li到第九个li加下边框
+@for $i from 1 through 9 {
+    #left li:nth-child(#{$i}) {
+        border-bottom: 1px solid #fff;
+    }
+}
+
+.louti_active {
+    background: red;
+}
+
+//每个li加背景颜色
+// #left li:nth-child(1) {
+//     background: #ff0036;
+// }
+// #left li:nth-child(2):hover {
+//     background: greenyellow;
+// }
+// #left li:nth-child(3):hover {
+//     background: #333;
+// }
+// #left li:nth-child(4):hover {
+//     background: rgb(169, 235, 108)
+// }
+// #left li:nth-child(5):hover {
+//     background: rgb(129, 148, 212)
+// }
+// #left li:nth-child(6):hover {
+//     background: rgb(108, 182, 85)
+// }
+// #left li:nth-child(7):hover {
+//     background: rgb(241, 126, 72)
+// }
+// #left li:nth-child(8):hover {
+//     background: rgb(136, 148, 109)
+// }
+// #left li:nth-child(9):hover {
+//     background: rgb(19, 18, 18)
+// }
+// #left li:nth-child(10) {
+//     background: rgb(156, 153, 153)
+// }
+//右边楼梯
+#right {
+    height: 100%;
+    width: 35px;
+    background: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 12001;
+    li {
+        position: absolute;
+        right: 0;
+        width: auto;
+        height: 35px;
+        a {
+            display: inline-block;
+            .right_louti_title {
+                position: absolute;
+                top: 0px;
+                right: 100px;
+                height: 35px;
+                width: 100px;
+                color: #fff;
+                line-height: 35px;
+                text-align: center;
+                font-size: 14px;
+                background: #666;
+                // 隐藏运动的title
+                opacity: 0;
+                span {
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    border-left: 10px solid #666;
+                    position: absolute;
+                    right: -8px;
+                    top: 8px;
+                }
+            }
+            .right_louti_content {
+                position: relative;
+                width: 35px;
+                height: 35px;
+                strong {
+                    font-size: 28px;
+                    color: #fff;
+                    position: absolute;
+                    top: -2px;
+                    left: 4px;
+                }
+            }
+        }
+    }
+}
+
+#right .right_louti_content:hover {
+    background: red;
+}
+
+#right li:nth-child(2):hover {
+    background: red;
+}
+
+#right li:nth-child(1) {
+    top: 100px;
+    strong {
+        color: rgb(126, 126, 228);
+    }
+}
+
+#right li:nth-child(2) {
+    top: 140px;
+    width: 30px;
+    height: auto;
+    padding: 2px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    strong {
+        color: #fff;
+        font-size: 28px;
+        margin-left: 1px;
+    }
+    span {
+        display: inline-block;
+        font-size: 14px;
+        color: #fff;
+        width: 20px;
+        margin-left: 8px;
+    }
+}
+
+#right li:nth-child(3) {
+    top: 260px;
+}
+
+#right li:nth-child(4) {
+    top: 310px;
+}
+
+#right li:nth-child(5) {
+    top: 360px;
+}
+
+#right li:nth-child(6) {
+    top: 410px;
+}
+
+#right li:nth-child(7) {
+    top: 480px;
+}
+
+#right li:nth-child(8) {
+    top: 530px;
+    .right_louti_code {
+        width: 154px;
+        height: 207px;
+        position: absolute;
+        right: 40px;
+        top: -160px;
+        // 隐藏二维码
+        display: none;
+        .tmall_code {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            left: 26px;
+            img {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .right_louti_code_title {
+            position: absolute;
+            top: 150px;
+            left: 16px;
+            img {
+                display: inline-block;
+                width: 120px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+#right li:nth-child(9) {
+    top: 580px;
+}

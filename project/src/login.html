@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>理想生活上天猫</title>
+    <link rel="shortcut icon" href="//g.alicdn.com/mui/global/1.2.35/file/favicon.ico" type="image/x-icon" />
+    <link title="天猫Tmall.com" href="//g.alicdn.com/mui/global/1.2.35/file/search.xml" type="application/opensearchdescription+xml" rel="search" />
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="script/js/require.js" defer async="true" data-main="script/js/main_login.js"></script>
+    <style>
+        @font-face {
+            font-family: 'iconfont';
+            src: url('fonts/font_xghjm1jb13/iconfont.eot');
+            src: url('fonts/font_xghjm1jb13/iconfont.eot?#iefix') format('embedded-opentype'), url('fonts/font_xghjm1jb13/iconfont.woff2') format('woff2'), url('fonts/font_xghjm1jb13/iconfont.woff') format('woff'), url('fonts/font_xghjm1jb13/iconfont.ttf') format('truetype'), url('fonts/font_xghjm1jb13/iconfont.svg#iconfont') format('svg');
+        }
+        
+        @font-face {
+            font-family: 'iconfont';
+            src: url('fonts/font_4l459w38t13/iconfont.woff');
+        }
+        
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 12px;
+            color: red;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <div class="container">
+            <img src="img/TB1_Gn8RXXXXXXqaFXXXXXXXXXX-380-54.png" alt="">
+        </div>
+    </div>
+    <div class="main">
+        <div class="img">
+            <img src="https://gw.alicdn.com/tfs/TB1D4DVTzTpK1RjSZKPXXa3UpXa-1190-600.jpg" alt="">
+        </div>
+        <div class="loginbycode codebox">
+            <div>
+                <div class="code login_by_code">
+                    <div class="title">扫码登陆更安全</div>
+                    <strong class="iconfont">&#xf0212;</strong>
+                </div>
+                <h3>手机扫码，安全登录</h3>
+                <img src="https://img.alicdn.com/tfscom/TB1R8dMUpzqK1RjSZFCwu2bxVXa.png" alt="">
+                <div class="content">
+                    <strong class="iconfont">&#xf00a7;</strong>
+                    <p>打开<i>手机天猫</i>|<i>手机淘宝</i></p>
+                    <p>扫一扫登录</p>
+                </div>
+                <div class="submit">
+                    <a href="javascript:;" class="login_by_password">密码登录</a>
+                    <a href="http://10.31.163.45/projectname/src/registor.html" target="_blank" class="free_registor">免费注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="loginbycode passwordbox" style="display:none">
+            <div>
+                <div class="code login_by_code">
+                    <div class="title">扫码登陆更安全</div>
+                    <strong class="iconfont">&#xf0212;</strong>
+                </div>
+                <h3>密码登录</h3>
+                <form action="" id="form_login" method="post" onsubmit="return false;">
+                    <p>
+                        <label for="username" class="iconfont">&#xe603;</label>
+                        <input type="text" id="username" name="username" placeholder="会员名/手机/邮箱">
+                        <!-- <label id="username-error" class="error message" for="username">(3-15字符长度，支持汉字、字母、数字及_)</label> -->
+                    </p>
+                    <p>
+                        <label for="password" class="iconfont">&#xe649;</label>
+                        <input type="password" name="password" id="password" />
+                        <label id="password-error" class="error message" for="password"></label>
+                    </p>
+                    <p>
+                        <input type="button" value="登录" name="submit" class="submit" id="btn" />
+
+                    </p>
+                </form>
+
+                <div class="submit">
+                    <a href="javascript:;">忘记密码</a>
+                    <a href="javascript:;">忘记会员名</a>
+                    <a href="http://10.31.163.45/projectname/src/registor.html" target="_blank" class="free_registor">免费注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/js/jquery.js"></script>
+
+    <div id="footer">
+        底部
+    </div>
+    <script>
+        $("#footer").load("footer.html");
+    </script>
+</body>
+
+</html>

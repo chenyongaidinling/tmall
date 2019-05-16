@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>理想生活上天猫</title>
+    <link rel="shortcut icon" href="//g.alicdn.com/mui/global/1.2.35/file/favicon.ico" type="image/x-icon" />
+    <link title="天猫Tmall.com" href="//g.alicdn.com/mui/global/1.2.35/file/search.xml" type="application/opensearchdescription+xml" rel="search" />
+    <link rel="stylesheet" href="css/registor.css">
+    <link rel="stylesheet" href="css/reset.css ">
+    <script src="script/js/require.js" defer async="true" data-main="script/js/main_login.js"></script>
+
+</head>
+
+<body>
+    <div class="logo ">
+        <div class="container ">
+            <img src="img/TB1_Gn8RXXXXXXqaFXXXXXXXXXX-380-54.png " alt=" ">
+        </div>
+    </div>
+    <fieldset>
+        <legend>用户注册</legend>
+        <form action="http://10.31.163.45/projectname/php/registor.php" method="post" id="form1">
+            <p>
+                <label class="fwidth" for="username">用户名称：</label>
+                <input type="text" name="username" id="username" />
+                <label id="username-error" class="error" for="username">(必填，3-15字符长度，支持汉字、字母、数字及_)</label>
+            </p>
+            <p>
+                <label class="fwidth" for="password">用户密码：</label>
+                <input type="password" name="password" id="password" />
+                <label id="password-error" class="error" for="password">(必填，不得少于6位)</label>
+            </p>
+            <p>
+                <label class="fwidth" for="repass">确认密码：</label>
+                <input type="password" name="repass" id="repass" />
+                <label id="repass-error" class="error" for="repass">(必填，不得少于6位)</label>
+            </p>
+
+            <p>
+                <label class="fwidth" for="email">用户邮箱：</label>
+                <input type="text" name="email" id="email" />
+                <label id="email-error" class="error" for="email">(必填)</label>
+            </p>
+            <p>
+                <label class="fwidth" for="telphone">手机号码：</label>
+                <input type="text" name="telphone" id="telphone" />
+                <label id="telphone-error" class="error" for="telphone">(必填,请正确输入11位手机号码)</label>
+            </p>
+            <p class="clear">
+                <input type="submit" value="注册" name="submit" class="submit" />
+            </p>
+        </form>
+    </fieldset>
+</body>
+
+</html>
